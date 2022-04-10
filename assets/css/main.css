@@ -313,7 +313,6 @@ body {
   position: absolute;
   top: 100px;
   width: 280px;
-  height: 133px;
   background: #FFFFFF;
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
@@ -414,5 +413,16 @@ body {
   }
   .navbar {
     background-color: #232323;
+  }
+}
+@media (max-width: 605px) {
+  .testimonials .opinion {
+    width: 140px !important;
+    min-height: 133px;
+  }
+  .testimonials .opinion p {
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
   }
 }
