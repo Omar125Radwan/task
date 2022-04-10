@@ -9,7 +9,7 @@ window.onscroll = () => {
 
 
 
-
+/*
 let test1 = document.querySelector('.test-1');
 let opinion1 = document.querySelector('.opinion-1');
 
@@ -52,6 +52,26 @@ let opinion6 = document.querySelector('.opinion-6');
 test6.onclick = function() {
   opinion6.classList.toggle('block');
 }
+*/
 
 
+const bengoBtns = document.querySelectorAll('.test');
+const opinions = document.querySelectorAll('.opinion');
 
+bengoBtns.forEach((btn) => {
+  btn.addEventListener('click', function() {
+    const idBtn = this.dataset.id;
+    const open = document.querySelectorAll('#con_'+ idBtn);
+    open.forEach((o) => {
+      o.classList.toggle('block');
+    })
+  });
+});
+
+/* $('.finiture-wrapper').on('click', function() {
+  //first hide all other div
+  $(".allestimento-img-wrapper").hide();
+  var idBtn = $(this).data('id');
+  //now open the selected div
+  $("#div_"+idBtn).css('display', 'flex');
+}) */
