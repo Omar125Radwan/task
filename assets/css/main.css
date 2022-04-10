@@ -4,6 +4,7 @@ body {
 /* navbar */ 
 .navbar {
   border-bottom: 1px solid #CCCCCC;
+  z-index: 1000000000;
 }
 .navbar .navbar-nav a.nav-link {
   color: #fff;
