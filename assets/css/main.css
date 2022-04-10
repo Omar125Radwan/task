@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+/* navbar */ 
 .navbar {
   border-bottom: 1px solid #CCCCCC;
 }
@@ -50,6 +51,13 @@ body {
   background: #23D4CE;
   color: #fff;
 }
+
+/* navbar color */
+.navbar.dark {
+  background-color: #232323;
+}
+
+/* hero */
 .hero {
   position: relative;
   background: url(../imgs/Vector\ 3.png), url(../imgs/Vector\ 4.png);
@@ -59,7 +67,6 @@ body {
   background-repeat: no-repeat, no-repeat;
   margin-bottom: 44px;
 }
-
 .hero .content {
   padding-top: 213px;
   position: relative;
@@ -101,6 +108,8 @@ body {
   height: 499px;
 }
 
+/* friends */
+
 .friends {
   margin-top: 53px;
 }
@@ -115,6 +124,8 @@ body {
     margin: 0 auto;
   }
 }
+
+/* features */
 
 .features {
   background: #F7F7F7;
@@ -184,52 +195,9 @@ body {
   color: #52565F;
   padding: 14px;
 }
-@media (max-width: 1440px) {
-  .hero .dots {
-    max-width: 100% !important;
-    z-index: -1;
-  }
-}
 
-@media (max-width: 992px) {
-  .hero {
-    background: #302850;
-    height: 100%;
-    margin-bottom: 44px;
-    position: relative;
-  }
-  .hero .content {
-    padding: 120px 0;
-    text-align: center;
-  }
-  .hero .content p {
-    width: 100%;
-    height: 100%;
-    font-size: 23px;
-    line-height: 40px;
-    text-align: center;
-    color: #fff;
-    margin-top: 35px;
-  }
-  .hero .content button {
-    padding: 10px 20px;
-    background: #fff;
-    border-radius: 6px;
-    border: none;
-    margin-top: 0px;
-    color: #23D4CE;
-    position: relative;
-  }
-}
+/* testimonials */
 
-@media (max-width: 992px) {
-  .navbar {
-    background-color: #232323;
-  }
-}
-.navbar.dark {
-  background-color: #232323;
-}
 .testimonials {
   margin: 60px auto;
   display: flex;
@@ -390,4 +358,60 @@ body {
 }
 .testimonials .opinion .rating {
   margin-top: -10px;
+}
+
+
+/* Media */
+
+@media (max-width: 1720px) {
+  .hero {
+    height: 770px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero .dots {
+    max-width: 100% !important;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero {
+    height: 708px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    background: #302850;
+    height: 100%;
+    margin-bottom: 44px;
+    position: relative;
+  }
+  .hero .content {
+    padding: 120px 0;
+    text-align: center;
+  }
+  .hero .content p {
+    width: 100%;
+    height: 100%;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    margin-top: 35px;
+  }
+  .hero .content button {
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 6px;
+    border: none;
+    margin-top: 0px;
+    color: #23D4CE;
+    position: relative;
+  }
+  .navbar {
+    background-color: #232323;
+  }
 }
